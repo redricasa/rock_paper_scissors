@@ -77,13 +77,18 @@
         else if (userGuess==="r" && computerGuess === "s"){
             console.log("It's a tie!");
         }
+        //else doesn't take on a condition
         else {
-            console.log("something went wrong!")
+            console.log("something went wrong!- gotta wait a bit to let the computer choose.. or you chose something other than 'r'/'p'/'s' ")
         }
 
 // 4. We then add to their score.
 
-//    * If user wins then we add one to their wins.
+//    * If user wins then we add one to their wins. 
+// use for loop to put in all the different conditions when the user gets a point
+        for (userGuess==="r" && computerGuess === "s";userGuess==="s" && computerGuess === "p";userGuess==="p" && computerGuess === "r"){
+                ;
+        }
     
 //    * If user loses then we add one to their losses.
     
