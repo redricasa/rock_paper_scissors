@@ -31,7 +31,7 @@
       //try without the computerChoices.length since there's the number 2 in Math.floor(Math.random(-).
       //computerchoice of 0 = r, 1 = p, 2 = s
 
-      console.log(computerChoices)
+      console.log(computerGuess) //to display to console the computer's choices
 
       var computerGuess = computerChoices[Math.floor(Math.random(2) * computerChoices.length)];
 
@@ -49,16 +49,34 @@
       }
     
 //    * If user picks rock and if computer picks paper then user loses.
+        if (userGuess==="r" && computerGuess === "p"){
+            document.write("one point for the computer :(");
+        }
 
 //    * If user picks scissors and if computer picks rock then user loses.
+        if (userGuess==="s" && computerGuess === "r"){
+            document.write("one point for the computer ...@_@...");
+        }
 
 //    * If user picks scissors and if computer picks paper then user wins.
+        if (userGuess==="s" && computerGuess === "p"){
+            document.write("one point for you!");
+        }
 
 //    * If user picks paper and if computer picks rock then user wins.
+        if (userGuess==="p" && computerGuess === "r"){
+            document.write("one point for you!");
+        }
 
 //    * If user picks paper and if computer picks scissors then user loses.
+        if (userGuess==="p" && computerGuess === "s"){
+            document.write("one point for the computer... meh");
+        }
 
 //    * If user picks the same as computer then they tie.
+        if (userGuess==="r" && computerGuess === "s"){
+            document.write("It's a tie!");
+        }
 
 // 4. We then add to their score.
 
