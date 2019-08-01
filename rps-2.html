@@ -44,38 +44,41 @@
 //       3. We determine if the user wins or not.
 //    * If user picks rock and if computer picks scissors then user wins.
 //     maybe computerGuess is only in numbers
-      if (userGuess==="r" && computerGuess === "s"){
+         if (userGuess==="r" && computerGuess === "s"){
         document.write("one point for you!");
-      }
+        }
     
 //    * If user picks rock and if computer picks paper then user loses.
-        if (userGuess==="r" && computerGuess === "p"){
+        else if (userGuess==="r" && computerGuess === "p"){
             document.write("one point for the computer :(");
         }
 
 //    * If user picks scissors and if computer picks rock then user loses.
-        if (userGuess==="s" && computerGuess === "r"){
+        else if (userGuess==="s" && computerGuess === "r"){
             document.write("one point for the computer ...@_@...");
         }
 
 //    * If user picks scissors and if computer picks paper then user wins.
-        if (userGuess==="s" && computerGuess === "p"){
+        else if (userGuess==="s" && computerGuess === "p"){
             document.write("one point for you!");
         }
 
 //    * If user picks paper and if computer picks rock then user wins.
-        if (userGuess==="p" && computerGuess === "r"){
+        else if (userGuess==="p" && computerGuess === "r"){
             document.write("one point for you!");
         }
 
 //    * If user picks paper and if computer picks scissors then user loses.
-        if (userGuess==="p" && computerGuess === "s"){
+        else if (userGuess==="p" && computerGuess === "s"){
             document.write("one point for the computer... meh");
         }
 
 //    * If user picks the same as computer then they tie.
-        if (userGuess==="r" && computerGuess === "s"){
+        else if (userGuess==="r" && computerGuess === "s"){
             document.write("It's a tie!");
+        }
+        else {
+            document.write("something went wrong!")
         }
 
 // 4. We then add to their score.
