@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 2
+  </title>
+</head>
+
+<body>
+
+  <div id="game">
+
+  </div>
+
+  <script type="text/javascript">
+
+    alert("choose 'r' for rock, 'p' for paper, and 's' for scissors")
+    // Creates a variable that contains an array that lists out all of the options (Rock, Paper, or Scissors).
+    var computerChoices = ["r", "p", "s"];
+
+    // This function is run whenever the user presses a key.
+    document.onkeyup = function(event) {
+
+      // Determines which key was pressed.
+      //new variable userGuess to listen to a key being pressed
+      var userGuess = event.key;
+
+      // Randomly chooses a choice from the options array. This is the Computer's guess.
+      //new variable introduced to store computer's choice of a random number 0,1, or 2- a total of three numbers.
+      //try without the computerChoices.length since there's the number 2 in Math.floor(Math.random(-).
+      //computerchoice of 0 = r, 1 = p, 2 = s
+
+      console.log(computerChoices)
+
+      var computerGuess = computerChoices[Math.floor(Math.random(2) * computerChoices.length)];
+
+      // Alerts the key the user pressed (userGuess).
+      alert("User guess: " + userGuess);
+
+      // Alerts the Computer's guess.
+      alert("Computer guess: " + computerGuess);
+
+//       3. We determine if the user wins or not.
+//    * If user picks rock and if computer picks scissors then user wins.
+//     maybe computerGuess is only in numbers
+      if (userGuess==="r" && computerGuess === "s"){
+        document.write("one point for you!");
+      }
+    
+//    * If user picks rock and if computer picks paper then user loses.
+
+//    * If user picks scissors and if computer picks rock then user loses.
+
+//    * If user picks scissors and if computer picks paper then user wins.
+
+//    * If user picks paper and if computer picks rock then user wins.
+
+//    * If user picks paper and if computer picks scissors then user loses.
+
+//    * If user picks the same as computer then they tie.
+
+// 4. We then add to their score.
+
+//    * If user wins then we add one to their wins.
+    
+//    * If user loses then we add one to their losses.
+    
+//    * If user ties then we add one to their ties.
+
+// 5. The user then presses r, p, or s to play again.
+
+
+      };
+  </script>
+
+</body>
+
+</html>
